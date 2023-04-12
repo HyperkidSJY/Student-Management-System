@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<style>
+		.container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+		}
+		
+		h1 {
+		text-align: center;
+		color:white;
+		font-size:40px;}
+		
+		
+		button,a {
+			padding: 5px;
+			margin: 20px;
+			width:10%;
+			font-size: 20px;
+			border: none;
+			background-color: lightblue;
+			color: black;
+			cursor: pointer;
+			border-radius: 5px;
+		}
+
+		/* button:hover {
+			background-color: #3e8e41;
+		}
+		 */
+		
+		
+		
+		body{
+	margin: 0;
+	padding: 0;
+	background-color: #0e6cc4;
+	overflow-x:hidden;
+	overflow-y:hidden;
+}
+
+
+
+
+.box {
+	position: fixed;
+	top: 0;
+	transform: rotate(80deg);
+	left: 0;
+}
+
+
+.box:after {
+  content: '';
+  display: block;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 11;
+  transform: translate3d(0, 0, 0);
+}
+
+@keyframes drift {
+  from { transform: rotate(0deg); }
+  from { transform: rotate(360deg); }
+}
+
+
+.contain {
+	animation-delay: 4s;
+	z-index: 1000;
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  background: #FFCCCB;
+  background: -webkit-linear-gradient(#53a4c2, #041f69);
+  background: linear-gradient(#53a4c2, #041f69);
+}
+
+
+
+		
+	</style>
+</head>
+
+<body>
+  
+  <h1 style="justify-content: center;">Student Management System</h1>
+	
+		 <div class='box'>
+  <div class='wave -one'></div>
+  <div class='wave -two'></div>
+  <div class='wave -three'></div>
+	</div>
+		
+  	<div class="container">
+		<a href="/students"><button>Student</button></a>
+		<a href="/teachers"><button>Teacher</button></a>
+		<a href="/courses"><button>Course</button></a>
+		<a href="/rooms"><button>Room</button></a>
+    </div>
+</body>
+
+</html>
